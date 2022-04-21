@@ -1,4 +1,4 @@
-package me.fallenbreath.template_mod;
+package com.plusls.template_mod;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;

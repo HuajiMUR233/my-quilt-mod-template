@@ -1,30 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "template_mod",
-  "version": "${version}",
-
-  "name": "template_mod",
-  "description": "",
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_name}",
   "authors": [
-    "Fallen_Breath"
+    "plusls"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/",
-    "sources": "https://github.com/"
+    "homepage": "${mod_homepage}",
+    "issues": "${mod_sources}/issues",
+    "sources": "${mod_sources}"
   },
-
-  "icon": "assets/template_mod/icon.png",
-
+  "license": "${mod_license}",
+  "icon": "assets/${mod_id}/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.fallenbreath.template_mod.TemplateMod"
+      "com.plusls.template_mod.TemplateMod"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json"
+    "${mod_id}.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.7.1",
     "minecraft": "${minecraft_dependency}"
